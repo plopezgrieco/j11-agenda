@@ -19,6 +19,7 @@ public class ContactoDaoMemSerial implements ContactoDao {
 	private final String F_MAPA = "mapa.dat";
 	private final String F_IDX = "indice.dat";
 	
+	@SuppressWarnings("unchecked")
 	public ContactoDaoMemSerial() {
 		try (FileInputStream fis = new FileInputStream(F_MAPA);
 			 FileInputStream fisIdx = new FileInputStream(F_IDX)){
