@@ -9,6 +9,10 @@ import java.util.Set;
 
 public class Contacto implements Comparable<Contacto>, Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -2394600580531191305L;
 	private int idContacto;
 	private String nombre;
 	private String apellidos;
@@ -115,11 +119,30 @@ public class Contacto implements Comparable<Contacto>, Serializable {
 		return idContacto == other.idContacto;
 	}
 
-	@Override
+	
+	
+@Override
 	public String toString() {
-		return "Contacto [" + idContacto + ", " + nombre + ", " + apellidos + ", " + apodo + "]";
+		return "contactos.add(new Contacto(" + idContacto + ", \"" + nombre + "\", \"" + apellidos + "\", \"" + apodo + "\"," + dom + "));";
 	}
 
+public Contacto(int idContacto, String nombre, String apellidos, String apodo, Domicilio dom) {
+		super();
+		this.idContacto = idContacto;
+		this.nombre = nombre;
+		this.apellidos = apellidos;
+		this.apodo = apodo;
+		this.dom = dom;
+
+	}
+
+//	@Override
+//	public String toString() {
+//		return "Contacto [" + idContacto + ", " + nombre + ", " + apellidos + ", " + apodo + "]";
+//	}
+//	
+	
+	
 	@Override
 	public int compareTo(Contacto o) {
 		if (this.equals(o)) {

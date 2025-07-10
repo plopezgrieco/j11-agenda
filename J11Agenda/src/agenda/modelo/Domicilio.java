@@ -5,6 +5,10 @@ import java.util.Objects;
 
 public class Domicilio implements Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5858999597809103743L;
 	private String tipoVia;
 	private String via;
 	private int numero;
@@ -14,6 +18,20 @@ public class Domicilio implements Serializable {
 	private String ciudad;
 	private String provincia;
 	
+	public Domicilio() {}
+	
+	public Domicilio(String tipoVia, String via, int numero, int piso, String puerta, String codigoPostal,
+			String ciudad, String provincia) {
+		super();
+		this.tipoVia = tipoVia;
+		this.via = via;
+		this.numero = numero;
+		this.piso = piso;
+		this.puerta = puerta;
+		this.codigoPostal = codigoPostal;
+		this.ciudad = ciudad;
+		this.provincia = provincia;
+	}
 	public String getTipoVia() {
 		return tipoVia;
 	}
@@ -81,6 +99,11 @@ public class Domicilio implements Serializable {
 				&& numero == other.numero && piso == other.piso && Objects.equals(provincia, other.provincia)
 				&& Objects.equals(puerta, other.puerta) && Objects.equals(tipoVia, other.tipoVia)
 				&& Objects.equals(via, other.via);
+	}
+	@Override
+	public String toString() {
+		return "new Domicilio (\"" + tipoVia + "\", \"" + via + "\", " + numero + ", " + piso + ", \"" + puerta + "\", \"" + codigoPostal
+				+ "\", \"" + ciudad + "\", \"" + provincia + "\")";
 	}
 	
 	
