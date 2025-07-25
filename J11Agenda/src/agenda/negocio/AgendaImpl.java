@@ -26,8 +26,8 @@ public class AgendaImpl implements Agenda {
 	
 	public AgendaImpl() {
 //		cDao = new ContactoDaoMemDinamica();
-		cDao = new ContactoDaoMemSerial();
-//		cDao = new ContactoDaoJDBC();
+//		cDao = new ContactoDaoMemSerial();
+		cDao = new ContactoDaoJDBC();
 	}
 
 	@Override

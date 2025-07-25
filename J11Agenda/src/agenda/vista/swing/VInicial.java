@@ -54,7 +54,7 @@ public class VInicial extends JFrame {
 	private DefaultTableModel modelo;
 	private String[][] datosTabla;// = new String[0][0];
 	private String[] titulosTabla = { "Nombre", "Apellidos", "Apodo",
-			"Tipo Via", "Via", "N�mero", "Piso", "Puerta", "Cod.Postal",
+			"Tipo Via", "Via", "Numero", "Piso", "Puerta", "Cod.Postal",
 			"Ciudad", "Provincia" };
 	private Contacto contactoActual;
 	private int AGREGAR = 0;
@@ -440,7 +440,7 @@ public class VInicial extends JFrame {
 			}
 			if (ev.getSource() == bSalir) {
 				if (JOptionPane.showConfirmDialog(null,
-						"Desea salir de la aplicaci�n", "Salir de Agenda", 2) == 0){
+						"Desea salir de la aplicacion", "Salir de Agenda", 2) == 0){
 //					try {
 //						control.grabar();
 //					} catch (IOException | SQLException e) {

@@ -8,11 +8,8 @@ import java.util.Locale;
 import java.util.Set;
 
 public class Contacto implements Comparable<Contacto>, Serializable {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = -2394600580531191305L;
+	
 	private int idContacto;
 	private String nombre;
 	private String apellidos;
